@@ -1,0 +1,302 @@
+body { 
+    font-family: Lora, sans-serif;
+    margin: 0px;
+    background-color: #FEFEFA ;
+} 
+
+/*for logo and title*/
+.logo-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; /*for small screens*/
+}
+
+/*logo images on either side of title*/
+.logo {
+    max-width: 50px; /*width of the logo */
+    height: auto;
+    margin: 0 10px; /* Space between logo and the title */
+}
+
+#title {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-family: Lora, sans-serif;
+}
+
+ul {
+    margin: 0px;
+}
+
+body {
+    line-height: 1.8;
+}
+
+body > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8ecec;
+    color: #ce6664;
+    padding: 20px;
+    height: auto; 
+}
+
+/* make nav links look like tabs */
+#nav-u1 {
+    flex-wrap: wrap; /*for small screens*/
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; /* remove bullet points */
+}
+
+#nav-u1 > li {
+    margin: 0 20px; /* spacing between tabs */
+}
+
+.navbutton {
+    color: #ce6664;
+    text-decoration: none;
+    padding: 12px 50px;
+    background-color: #f8dada; /* tab background color */
+    border-radius: 8px ; /* rounded corners for tabs */
+    border: 1px solid white;
+}
+
+.navbutton:hover {
+    background-color: pink; /* darker pink when u hover */
+    cursor: pointer; /*cursor becomes hand pointer */
+}
+
+main {
+    padding-top: 20px;
+}
+
+
+body > main > article {
+    margin: auto;
+    width:70%;
+    color: #4a4a4a;
+}
+
+main > article p {
+    margin-bottom: 25px;
+    font-size: 17px; /* size of paragraphs */
+    margin-bottom: 25px; /* space between paragraphs */
+    text-align: justify;
+}
+
+main > article p:first-of-type::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    color: #ce6664;
+}
+
+.section-number {
+    color: #ce6664; /* diff color for the numbers and subsection title */
+    font-weight: bold; /* makes the subsection titles bold */
+    font-size: 20px; 
+    margin-right: 5px; /* space between the subsection title and text */
+}
+
+
+.author-footer {
+    background-color: #f8ecec;
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+.author-info {
+    display: flex; 
+    align-items: center; 
+    gap: 25px; /* space between daisy image and text */
+}
+
+.author-profilepic {
+    width: 100px; 
+    height: auto; 
+    border-radius: 50%; /* circular image */
+    border: 2px solid #ddd; /* border around the image */
+}
+
+.author-details {
+    text-align: center;
+}
+
+.author-details h2,
+.author-details h3 {
+    margin: 5px 0; /* margin around 'written by' section */
+    color: #ce6664; /*text colour*/
+    font-style: italic;
+}
+
+.author-link {
+    color: #ce6664; 
+    text-decoration: none; /* no underline */
+    font-weight: bold; 
+}
+
+.author-link:hover {
+    text-decoration: underline; /* underline link to linkedin on hover */
+}
+
+
+
+.sidebar-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 80px; /* space between sections */
+    flex-wrap: wrap; /*for small screens*/
+    color: #ce6664;
+    background-color: #f8ecec;
+}
+
+.sidebar-section {
+    flex: 1; /* Allow sections to grow and shrink */
+}
+
+.sidebar-links {
+    color: #ce6664;
+    font-style: italic;
+    list-style: none;
+    padding: 8px;
+    border-radius: 8px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar-links:hover {
+    background-color: pink; /* darker pink on hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-links a:visited {
+    color: inherit; /* keeps the color the same after clicking link */
+}
+
+
+.form-section {
+    max-width: 500px; /* smaller width */
+    margin: auto; /* centers form on page */
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; /* rounded corners for the form */
+    border: 1px solid #ddd; 
+}
+
+.form-section > h2 {
+    text-align: center;
+    color: #ce6664;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* space between form groups */
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; /* space between label and input box */
+    font-weight: bold; 
+    color: #4a4a4a; 
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%; /* input boxes go full width of form container */
+    padding: 10px; /* padding inside input boxes */
+    border: 1px solid #ccc; 
+    border-radius: 4px; /* rounded corners for input boxes */
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /*space between checkbox and label */
+}
+
+input[type="submit"] {
+    background-color: #f8ecec; /* original button color */
+    color: #ce6664; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; /* rounded corners */
+    cursor: pointer; /* pointer hand on hover */
+    font-family: Lora, sans-serif;
+    font-size: 17px; 
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: pink; /*darker pink on hover */
+    transform: scale(1.05); /* make submit button bigger on hover */
+}
+
+
+body > footer {
+    background-color: #f8ecec;
+    color: #ce6664;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    height: 35vh;
+    justify-content: space-around;
+}
+
+#footer-container {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; /*if screen smaller, text can go onto next line*/
+}
+
+
+section {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 20px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;            
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+body > footer > #footer-container > nav > u1 {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.footerbutton {
+    color: #ce6664;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #f8ecec; /* originsl tab background color */
+    border-radius: 8px ; /* tounded corners like a tab */
+}
+
+.footerbutton:hover {
+    background-color: pink; /*darker pink tab colour on hover */
+    cursor: pointer;
+}
